@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <!-- CSS Propios -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Administrador - Insertar Producto</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="barra-navegacion"></div>
+
+        <!-- Contenido -->
+        <div class="container contenido">
+            <a href="ver-productos.html" class="btn btn-success"><img src="../img/back.svg" height="15px" style="margin-right: 5px;"> Volver</a>
+            <br>
+            <br>
+            <h3 class="text-center">Insertar Producto</h3>
+            <hr>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="producto">Producto:</label>
+                        <input type="text" name="producto" id="producto" class="form-control" placeholder="Producto">
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="costo">Costo:</label>
+                        <input type="number" name="costo" id="costo" class="form-control" min="0" step="0.5">
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio" class="form-control" min="0" step="0.5">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="existencia">Existencia:</label>
+                        <input type="number" name="existencia" id="existencia" class="form-control" min="0" step="1">
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="reorden">Reorden:</label>
+                        <input type="number" name="reorden" id="reorden" class="form-control" min="0" step="1">
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="comprometidas">Comprometidas:</label>
+                        <input type="number" name="comprometidas" id="comprometidas" class="form-control" min="0" step="1">
+                        <br>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="vigente">Vigente:</label>
+                        <select name="vigente" id="vigente" class="form-control">
+                            <option value="null" disabled selected>Selecciona</option>
+                            <option value="true">Sí</option>
+                            <option value="false">No</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+                <label for="imagen">Imagen:</label>
+                <input type="text" name="imagen" id="imagen" class="form-control" placeholder="Imagen">
+                <br>
+                <button class="btn btn-block btn-info" onclick="insertarProducto()">Insertar producto</button>
+                <div id="area-info"></div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer id="pie-pagina"></footer>
+
+        <!-- Bootstrap -->
+        <script src="../js/libs/jquery-3.2.1.slim.min.js"></script>
+        <script src="../js/libs/popper.min.js"></script>
+        <script src="../js/libs/bootstrap.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="../js/libs/jquery-3.4.1.js"></script>
+
+        <!-- Scripts -->
+        <script src="../js/contenido-fijo-admin.js"></script>
+        <script src="../js/metodos-rest.js"></script>
+        <script src="../js/insertar-producto.js"></script>
+    </body>
+</html>
