@@ -68,8 +68,17 @@
                         <br>
                     </div>
                 </div>
-                <label for="imagen">Imagen:</label>
-                <input type="text" name="imagen" id="imagen" class="form-control" placeholder="Imagen">
+                <label for="imagen">URL de la imagen:</label>
+                <input type="text" name="imagen" id="imagen" class="form-control" placeholder="Imagen" onkeyup="cargarVistaPrevia()">
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Vista previa de la imagen:</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="vista-previa-imagen"></div>
+                    </div>
+                </div>
                 <br>
                 <button class="btn btn-block btn-info" onclick="insertarProducto()">Insertar producto</button>
                 <div id="area-info"></div>

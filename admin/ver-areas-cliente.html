@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <!-- DataTable CSS -->
+        <link rel="stylesheet" href="../css/datatables.min.css">
+
+        <!-- CSS Propios -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Administrador - Ver Áreas Cliente</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="barra-navegacion"></div>
+
+        <!-- Contenido -->
+        <div class="container-fluid contenido">
+            <a href="insertar-area-cliente.html" class="btn btn-success">Insertar área cliente <img src="../img/add.svg" height="15px" style="margin-left: 9px;"></a>
+            <br>
+            <br>
+            <h3 class="text-center">Áreas cliente</h3>
+            <hr class="my-4">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col" width="150">No. empleados</th>
+                        <th scope="col">Área</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col" width="50">Actu.</th>
+                        <th scope="col" width="50">Elim.</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido-tabla"></tbody>
+            </table>
+        </div>
+        
+        <!-- Footer -->
+        <footer id="pie-pagina"></footer>
+
+        <!-- Bootstrap -->
+        <script src="../js/libs/jquery-3.2.1.slim.min.js"></script>
+        <script src="../js/libs/popper.min.js"></script>
+        <script src="../js/libs/bootstrap.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="../js/libs/jquery-3.4.1.js"></script>
+
+        <!-- DataTable -->
+        <script src="../js/libs/datatables.min.js"></script>
+
+        <!-- Scripts -->
+        <script src="../js/contenido-fijo-admin.js"></script>
+        <script src="../js/metodos-rest.js"></script>
+        <script src="../js/ver-areas-cliente.js"></script>
+    </body>
+</html>

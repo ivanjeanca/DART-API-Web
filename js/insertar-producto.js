@@ -70,3 +70,8 @@ function insertarProducto() {
     } else
         document.getElementById("area-info").innerHTML = '<br><div class="alert alert-danger text-center">Falta llenar<br>' + error + '</div>'
 }
+
+function cargarVistaPrevia() {
+    let imgurl = document.getElementById("imagen").value
+    document.getElementById("vista-previa-imagen").innerHTML = '<img src="' + imgurl + '" alt="El url no es una imagen" height=150px/>'
+}

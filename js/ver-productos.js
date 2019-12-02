@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 function llenarTabla(productos) {
     let html = ""
-    console.log(productos)
     for (let i = 0; i < productos.length; i++) 
         html+=  '<tr>' +
-                    //'<th>' + productos[i].idProducto + '</th>' +
                     '<td>' + productos[i].producto + '</td>' +
                     '<td>$' + separadorCantidades(productos[i].costo.toFixed(2)) + '</td>' +
                     '<td>$' + separadorCantidades(productos[i].precio.toFixed(2)) + '</td>' +
@@ -18,7 +16,7 @@ function llenarTabla(productos) {
                     '<td>' + productos[i].reorden + '</td>' +
                     '<td>' + productos[i].comprometidas + '</td>' +
                     '<td>' + (productos[i].vigente ? '<div class="btn btn-success boton-listado">Sí</div>' : '<div class="btn btn-danger boton-listado">No</div>') + '</td>' +
-                    '<td>' + productos[i].imagen + '</td>' +
+                    '<td class="text-center"><img src="' + productos[i].imagen + '" height=35px alt="Imagen ' + productos[i].producto + '"/></td>' +
                     '<td><a class="btn btn-info boton-accion" href="actualizar-producto.html?id=' + productos[i].id_producto + '"><img src="../img/edit.svg" height=18px></a></td>' +
                     '<td><a class="btn btn-dark boton-accion" href="eliminar-producto.html?id=' + productos[i].id_producto + '"><img src="../img/delete.svg" height=18px></a></td>' +
                 '</tr>'

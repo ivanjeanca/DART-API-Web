@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     id = location.href.split("=")[1]
     producto = await apiGet('productos', id);
     if(producto.length > 0)
-        document.getElementById("producto").innerHTML = producto[0].nomProducto
+        document.getElementById("producto").innerHTML = producto[0].producto
 });
 
 function eliminarProducto() {

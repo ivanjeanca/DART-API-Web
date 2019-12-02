@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <!-- DataTable CSS -->
+        <link rel="stylesheet" href="../css/datatables.min.css">
+
+        <!-- CSS Propios -->
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>Administrador - Ver Usuarios</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="barra-navegacion"></div>
+
+        <!-- Contenido -->
+        <div class="container-fluid contenido">
+            <a href="insertar-usuario.html" class="btn btn-success">Insertar usuario <img src="../img/add.svg" height="15px" style="margin-left: 9px;"></a>
+            <br>
+            <br>
+            <h3 class="text-center">Usuarios</h3>
+            <hr class="my-4">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID Usuario</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">ID Empleado</th>
+                    </tr>
+                </thead>
+                <tbody id="contenido-tabla"></tbody>
+            </table>
+        </div>
+        
+        <!-- Footer -->
+        <footer id="pie-pagina"></footer>
+
+        <!-- Bootstrap -->
+        <script src="../js/libs/jquery-3.2.1.slim.min.js"></script>
+        <script src="../js/libs/popper.min.js"></script>
+        <script src="../js/libs/bootstrap.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="../js/libs/jquery-3.4.1.js"></script>
+
+        <!-- DataTable -->
+        <script src="../js/libs/datatables.min.js"></script>
+
+        <!-- Scripts -->
+        <script src="../js/contenido-fijo-admin.js"></script>
+        <script src="../js/metodos-rest.js"></script>
+        <script src="../js/ver-usuarios.js"></script>
+    </body>
+</html>

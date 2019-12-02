@@ -16,6 +16,7 @@ function llenarFormulario(producto) {
     document.getElementById("comprometidas").value = producto.comprometidas
     document.getElementById("vigente").value = producto.vigente
     document.getElementById("imagen").value = producto.imagen
+    cargarVistaPrevia()
 }
 
 function actualizarProducto() {
@@ -80,4 +81,9 @@ function actualizarProducto() {
             document.getElementById("area-info").innerHTML = '<br><div class="alert alert-danger text-center">Información incorrecta en<br>' + error + '</div>'
     } else
         document.getElementById("area-info").innerHTML = '<br><div class="alert alert-danger text-center">Falta llenar<br>' + error + '</div>'
+}
+
+function cargarVistaPrevia() {
+    let imgurl = document.getElementById("imagen").value
+    document.getElementById("vista-previa-imagen").innerHTML = '<img src="' + imgurl + '" alt="El url no es una imagen" height=150px/>'
 }
