@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 function llenarTabla(areas) {
     let html = ""
-    console.log(areas)
     for (let i = 0; i < areas.length; i++) 
         html+=  '<tr>' +
                     '<td>' + areas[i].area + '</td>' +

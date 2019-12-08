@@ -61,5 +61,5 @@ async function apiDelete(ruta, id){
 }
 
 function getRuta() {
-    return 'http://localhost:8888'
+    return 'http://192.168.1.76:8888'
 }

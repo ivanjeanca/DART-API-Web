@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 function llenarTabla(clientes) {
     let html = ""
-    console.log(clientes)
     for (let i = 0; i < clientes.length; i++) 
         html+=  '<tr>' +
                     '<td>' + clientes[i].id_cliente + '</td>' +

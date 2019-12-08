@@ -8,35 +8,28 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-        <!-- DataTable CSS -->
-        <link rel="stylesheet" href="../css/datatables.min.css">
-
         <!-- CSS Propios -->
         <link rel="stylesheet" href="../css/styles.css">
 
-        <title>Administrador - Ver Usuarios</title>
+        <title>Administrador - Eliminar Producto Área Cliente</title>
     </head>
     <body>
         <!-- Navbar -->
         <div id="barra-navegacion"></div>
 
         <!-- Contenido -->
-        <div class="container-fluid contenido">
-            <a href="insertar-usuario.html" class="btn btn-success">Insertar usuario <img src="../img/add.svg" height="15px" style="margin-left: 9px;"></a>
+        <div class="container contenido">
+            <a href="ver-producto-area-cliente.html" class="btn btn-success"><img src="../img/back.svg" height="15px" style="margin-right: 5px;"> Volver</a>
             <br>
             <br>
-            <h3 class="text-center">Usuarios</h3>
-            <hr class="my-4">
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th scope="col">ID Usuario</th>
-                        <th scope="col">Usuario</th>
-                        <th scope="col">Correo del empleado</th>
-                    </tr>
-                </thead>
-                <tbody id="contenido-tabla"></tbody>
-            </table>
+            <h3 class="text-center">Eliminar Producto Área Cliente</h3>
+            <hr>
+            <div class="form-group text-center">
+                <h5>¿Realmente quieres eliminar el producto <strong>"<span id="producto"></span>"</strong>, con área <strong>"<span id="area"></span>"</strong> y con cliente <strong>"<span id="cliente"></span>"</strong>?</h5>
+                <br>
+                <button class="btn btn-block btn-info" onclick="eliminarProductoAreaCliente()">Eliminar producto área cliente</button>
+                <div id="area-info"></div>
+            </div>
         </div>
         
         <!-- Footer -->
@@ -50,12 +43,9 @@
         <!-- JQuery -->
         <script src="../js/libs/jquery-3.4.1.js"></script>
 
-        <!-- DataTable -->
-        <script src="../js/libs/datatables.min.js"></script>
-
         <!-- Scripts -->
         <script src="../js/contenido-fijo-admin.js"></script>
         <script src="../js/metodos-rest.js"></script>
-        <script src="../js/ver-usuarios.js"></script>
+        <script src="../js/eliminar-producto-area-cliente.js"></script>
     </body>
 </html>

@@ -11,7 +11,7 @@ function llenarTabla(usuarios) {
         html+=  '<tr>' +
                     '<td>' + usuarios[i].id + '</td>' +
                     '<td>' + usuarios[i].username + '</td>' +
-                    '<td>' + ((usuarios[i].empleado != null) ? usuarios[i].empleado.id_empleado : "Sin asignar") + '</td>' +
+                    '<td>' + ((usuarios[i].empleado != null) ? (usuarios[i].empleado.correo) : "Sin asignar") + '</td>' +
                 '</tr>'
     document.getElementById('contenido-tabla').innerHTML = html;
 }
